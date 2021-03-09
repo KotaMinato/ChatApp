@@ -14,6 +14,8 @@
 		14E2EFCB25F71722001F41F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14E2EFC925F71722001F41F7 /* LaunchScreen.storyboard */; };
 		14E2EFD825F750F0001F41F7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E2EFD725F750F0001F41F7 /* ViewController.swift */; };
 		14E2EFE025F75376001F41F7 /* toNextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E2EFDF25F75376001F41F7 /* toNextViewController.swift */; };
+		14E2EFE425F761BC001F41F7 /* iconView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14E2EFE325F761BC001F41F7 /* iconView.xib */; };
+		14E2EFE725F761D5001F41F7 /* iconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E2EFE625F761D5001F41F7 /* iconView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		14E2EFCC25F71722001F41F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		14E2EFD725F750F0001F41F7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		14E2EFDF25F75376001F41F7 /* toNextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = toNextViewController.swift; sourceTree = "<group>"; };
+		14E2EFE325F761BC001F41F7 /* iconView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = iconView.xib; sourceTree = "<group>"; };
+		14E2EFE625F761D5001F41F7 /* iconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iconView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,8 @@
 				14E2EFC725F71722001F41F7 /* Assets.xcassets */,
 				14E2EFC925F71722001F41F7 /* LaunchScreen.storyboard */,
 				14E2EFCC25F71722001F41F7 /* Info.plist */,
+				14E2EFE325F761BC001F41F7 /* iconView.xib */,
+				14E2EFE625F761D5001F41F7 /* iconView.swift */,
 			);
 			path = ChatApp;
 			sourceTree = "<group>";
@@ -128,6 +134,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				14E2EFCB25F71722001F41F7 /* LaunchScreen.storyboard in Resources */,
+				14E2EFE425F761BC001F41F7 /* iconView.xib in Resources */,
 				14E2EFC825F71722001F41F7 /* Assets.xcassets in Resources */,
 				14E2EFC625F71722001F41F7 /* Main.storyboard in Resources */,
 			);
@@ -140,6 +147,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14E2EFE725F761D5001F41F7 /* iconView.swift in Sources */,
 				14E2EFD825F750F0001F41F7 /* ViewController.swift in Sources */,
 				14E2EFBF25F71722001F41F7 /* AppDelegate.swift in Sources */,
 				14E2EFE025F75376001F41F7 /* toNextViewController.swift in Sources */,
