@@ -7,23 +7,35 @@
 
 import UIKit
 
-class toNextViewController: UIViewController {
+class toNextViewController: UIViewController,UITextViewDelegate,UITableViewDataSource,UITableViewDelegate {
 
-    override func viewDidLoad() {
+    var array = ["自己紹介","年齢","地域","スタイル","身長","趣味"]
+
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+
+        return array.count
+    }
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+
+        let cell2: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "Cell2", for: indexPath);
+
+        cell2.textLabel!.text = array[indexPath.row]
+
+        tableView.isScrollEnabled = true
+
+
+
+             return cell2
+
+    }
+        override func viewDidLoad() {
         super.viewDidLoad()
 
         
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+    
+      
 
 }
