@@ -9,35 +9,31 @@ import UIKit
 
 class ViewController: UIViewController,UITextViewDelegate,UITableViewDataSource {
     
-
-    @IBOutlet weak var TableView: UITableViewCell!
+    var array = ["a","b","c"]
     
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return array.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath);        cell.textLabel!.text = array[indexPath.row]
+        return cell
+    }
+
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+          
         
         
     }
 
     
-//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//      return 6
-//    }
-//
-//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        let cell =
-//
-//        tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-//
-//        cell.textLabel?.text = textArray[indexPath.row]
-//
-//        cell.imageView?.image = UIImage(named: "checkImage")
-//
-//        return cell
-//    }
-//
-//
+   
+
+    
     
 
 }
