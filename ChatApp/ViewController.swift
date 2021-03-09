@@ -11,9 +11,7 @@ class ViewController: UIViewController,UITextViewDelegate,UITableViewDataSource,
     
     
     
-    
-    
-    var array = ["a","b","c","d","e","f","g","h"]//トークの数
+    var array = ["a","b","c","d","e","f","g","h","i","j"]//トークの数
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return array.count
@@ -27,6 +25,7 @@ class ViewController: UIViewController,UITextViewDelegate,UITableViewDataSource,
               cell.imageView!.image = UIImage(named: "iconfinder_user_male4_172628")
                
               cell.textLabel!.text = array[indexPath.row]
+               tableView.isScrollEnabled = true
        
         
         
@@ -37,9 +36,14 @@ class ViewController: UIViewController,UITextViewDelegate,UITableViewDataSource,
     override func viewDidLoad() {
         super.viewDidLoad()
         
-          
+        self.navigationController!.navigationBar.barStyle = .black
+        self.navigationController!.navigationBar.barTintColor = .white
+                self.navigationController!.navigationBar.tintColor = .black
+                self.navigationController!.navigationBar.titleTextAttributes = [
+                    .foregroundColor: UIColor.white
+        ]
         
-        
+       
     }
 
     
@@ -57,9 +61,8 @@ class ViewController: UIViewController,UITextViewDelegate,UITableViewDataSource,
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
      
         tableView.deselectRow(at: indexPath, animated: true)
-        
-//      
-            }
+        print("\(indexPath.row)番目の行が選択されました。")
+    }
       
 
 

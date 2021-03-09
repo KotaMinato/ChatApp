@@ -17,8 +17,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorInsetReference="fromAutomaticInsets" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ULl-19-FAr">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <rect key="frame" x="0.0" y="226" width="414" height="562"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="414" id="T3S-fN-cvF"/>
+                                    <constraint firstAttribute="height" constant="562" id="bfV-N2-YHd"/>
+                                </constraints>
                                 <color key="separatorColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <prototypes>
@@ -31,7 +35,10 @@
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bKo-Ge-XdW">
                                                     <rect key="frame" x="345" y="32" width="21" height="40"/>
-                                                    <state key="normal" image="iconfinder_shop_email_1469738 (1)"/>
+                                                    <state key="normal" image="iconfinder_shop_email_1469738 (1)">
+                                                        <color key="titleColor" systemColor="systemPinkColor"/>
+                                                        <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
                                                 </button>
                                             </subviews>
                                             <constraints>
@@ -51,14 +58,29 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="Veu-NY-lbL"/>
                                 </connections>
                             </tableView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IiZ-l0-Qnr">
+                                <rect key="frame" x="0.0" y="796" width="414" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="unnamed" translatesAutoresizingMaskIntoConstraints="NO" id="ML5-dC-Phv">
+                                <rect key="frame" x="0.0" y="90" width="414" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="lko-n7-dtP"/>
+                                    <constraint firstAttribute="width" constant="414" id="pR0-z5-15w"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="ULl-19-FAr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="62P-jb-dVa"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ULl-19-FAr" secondAttribute="bottom" id="NPK-2p-uGW"/>
-                            <constraint firstItem="ULl-19-FAr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="dye-ms-PHP"/>
-                            <constraint firstItem="ULl-19-FAr" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="xsj-OR-m3s"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ULl-19-FAr" secondAttribute="bottom" constant="74" id="9DV-PC-xgP"/>
+                            <constraint firstItem="ML5-dC-Phv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="DZh-69-SJI"/>
+                            <constraint firstItem="ULl-19-FAr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FkQ-du-fAN"/>
+                            <constraint firstItem="ULl-19-FAr" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Ve1-bg-IMN"/>
+                            <constraint firstItem="ML5-dC-Phv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="2" id="cgd-T1-hTQ"/>
+                            <constraint firstItem="ULl-19-FAr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="kXs-EF-XKE"/>
+                            <constraint firstItem="ML5-dC-Phv" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="xsr-jt-zfh"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="zhv-3N-BhK"/>
@@ -71,12 +93,6 @@
         <scene sceneID="7GO-sy-zLv">
             <objects>
                 <viewController id="ut7-BX-R0v" customClass="toNextViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="KiD-As-TW5">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="jZx-Dh-2xy"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </view>
                     <navigationItem key="navigationItem" id="ga8-rf-iLt"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EwY-ej-mir" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -104,8 +120,12 @@
     </scenes>
     <resources>
         <image name="iconfinder_shop_email_1469738 (1)" width="64" height="64"/>
+        <image name="unnamed" width="512" height="262"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
