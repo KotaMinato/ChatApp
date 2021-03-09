@@ -21,15 +21,23 @@ class ViewController: UIViewController,UITextViewDelegate,UITableViewDataSource 
     }
 
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-     
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
-    }
-    
-    
+//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//      return 6
+//    }
+//
+//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//        let cell =
+//
+//        tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+//
+//        cell.textLabel?.text = textArray[indexPath.row]
+//
+//        cell.imageView?.image = UIImage(named: "checkImage")
+//
+//        return cell
+//    }
+//
+//
     
 
 }
