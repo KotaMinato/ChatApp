@@ -16,6 +16,8 @@
 		14E2EFE025F75376001F41F7 /* toNextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E2EFDF25F75376001F41F7 /* toNextViewController.swift */; };
 		14E2EFE425F761BC001F41F7 /* iconView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14E2EFE325F761BC001F41F7 /* iconView.xib */; };
 		14E2EFE725F761D5001F41F7 /* iconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E2EFE625F761D5001F41F7 /* iconView.swift */; };
+		14E99BE825F8678C001E50CD /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E99BE725F8678C001E50CD /* User.swift */; };
+		14E99BF025F86AFE001E50CD /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E99BEF25F86AFE001E50CD /* UserTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		14E2EFDF25F75376001F41F7 /* toNextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = toNextViewController.swift; sourceTree = "<group>"; };
 		14E2EFE325F761BC001F41F7 /* iconView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = iconView.xib; sourceTree = "<group>"; };
 		14E2EFE625F761D5001F41F7 /* iconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iconView.swift; sourceTree = "<group>"; };
+		14E99BE725F8678C001E50CD /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		14E99BEF25F86AFE001E50CD /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,10 +66,12 @@
 		14E2EFBD25F71722001F41F7 /* ChatApp */ = {
 			isa = PBXGroup;
 			children = (
+				14E99BE725F8678C001E50CD /* User.swift */,
 				14E2EFBE25F71722001F41F7 /* AppDelegate.swift */,
 				14E2EFC025F71722001F41F7 /* SceneDelegate.swift */,
 				14E2EFD725F750F0001F41F7 /* ViewController.swift */,
 				14E2EFDF25F75376001F41F7 /* toNextViewController.swift */,
+				14E99BEF25F86AFE001E50CD /* UserTableViewCell.swift */,
 				14E2EFC425F71722001F41F7 /* Main.storyboard */,
 				14E2EFC725F71722001F41F7 /* Assets.xcassets */,
 				14E2EFC925F71722001F41F7 /* LaunchScreen.storyboard */,
@@ -149,6 +155,8 @@
 			files = (
 				14E2EFE725F761D5001F41F7 /* iconView.swift in Sources */,
 				14E2EFD825F750F0001F41F7 /* ViewController.swift in Sources */,
+				14E99BF025F86AFE001E50CD /* UserTableViewCell.swift in Sources */,
+				14E99BE825F8678C001E50CD /* User.swift in Sources */,
 				14E2EFBF25F71722001F41F7 /* AppDelegate.swift in Sources */,
 				14E2EFE025F75376001F41F7 /* toNextViewController.swift in Sources */,
 				14E2EFC125F71722001F41F7 /* SceneDelegate.swift in Sources */,

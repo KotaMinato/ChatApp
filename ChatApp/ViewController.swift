@@ -13,41 +13,49 @@ class ViewController: UIViewController,UITextViewDelegate,UITableViewDataSource,
     
     
     
-    var array = ["a","b","c","d","e","f","g","h","i","j"]//トークの数
+    var Datas: [Data] = []
+
+    @IBOutlet weak var myTableView: UITableView!
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        loadData()
+        
+        
+    }
+    
+    func loadData() {
+       Datas.append(Data(name: "おさけ", age:"20歳", city: "北海道"))
+       Datas.append(Data(name: "ぽん", age:"18歳", city: "東京"))
+       Datas.append(Data(name: "なおざね", age:"20歳", city: "北海道"))
+       Datas.append(Data(name: "ぴいた", age:"20歳", city: "青森"))
+       Datas.append(Data(name: "ひろ", age:"18歳", city: "東京"))
+       Datas.append(Data(name: "シーサイド", age:"23歳", city: "沖縄"))
+       Datas.append(Data(name: "ざねめん", age:"20歳", city: "青森"))
+       
+    }
+
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return array.count
+        return Datas.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath);
-        
+//           let cell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "UITableViewCell", for: indexPath);
+        guard let cell = myTableView.dequeueReusableCell(withIdentifier: "UserTableViewCell", for: indexPath) as? UserTableViewCell else {
+                    fatalError("Dequeue failed: UserTableViewCell")
+                }
+             
               //セルの中にアイコンを表示
               cell.imageView!.image = UIImage(named: "iconfinder_user_male4_172628")
-               
-              cell.textLabel!.text = array[indexPath.row]
-               tableView.isScrollEnabled = true
+              cell.userNameLabel.text = Datas[indexPath.row].name
+              cell.userAgeLabel.text = Datas[indexPath.row].age
+              cell.userCityLabel.text = Datas[indexPath.row].city
+              
        
-        
-        
         return cell
     }
-
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        self.navigationController!.navigationBar.barStyle = .black
-        self.navigationController!.navigationBar.barTintColor = .white
-                self.navigationController!.navigationBar.tintColor = .black
-                self.navigationController!.navigationBar.titleTextAttributes = [
-                    .foregroundColor: UIColor.white
-        ]
-        
-       
-    }
-
     
     
     func numberOfSections(in tableView: UITableView) -> Int {
