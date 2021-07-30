@@ -14,6 +14,7 @@ class toNextViewController: UIViewController,UITextViewDelegate,UITableViewDataS
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 
         return array.count
+        print("こんにちは")
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
